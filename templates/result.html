@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Up or Down</title>
+    <title>Result</title>
 </head>
 <body>
-<a href="{{ url_for('result') }}">Up or Down</a>
+{% if ud == 1 %}
+    Up
+{% elif ud == 2 %}
+   Down
+{% endif %}
 </body>
 </html>
